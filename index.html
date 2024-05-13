@@ -34,14 +34,53 @@
                     <img src="images/user.png">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Us</h1>
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('services')">Services</p>
+                        <p class="tab-links" onclick="opentab('who-are-we')">Who are we?</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                <div class="tab-contents active-tab" id="services">
+                    <ul>
+                        <li><span>Parental Support</span><br>1:1 Calls, Zooms and Resources for parents of queer kids</li>
+                        <li><span>Seminars & Workshops</span><br>Judgement free workshops for organisations on Diversity, Equity and Inclusion</li>
+                        <li><span>Education</span><br>Carefully created fun informational videos</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="who-are-we">
+                    <ul>
+                        <li><span>Storm Harris-Studdart</span><br>1:1 Calls, Zooms and Resources for parents of queer kids</li>
+                        <li><span>Min Khanthee</span><br>Judgement free workshops for organisations on Diversity, Equity and Inclusion</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Storm</span><br>1:1 Calls, Zooms and Resources for parents of queer kids</li>
+                        <li><span>Min</span><br>Judgement free workshops for organisations on Diversity, Equity and Inclusion</li>
+                    </ul>
+                </div>
+
                 </div>
             </div>
         </div>
-
-
-
 </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
 
     </body>
 </html>
