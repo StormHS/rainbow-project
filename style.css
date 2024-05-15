@@ -217,14 +217,36 @@ width: 50%;
     margin-top: 50px;
 }
 
+.video-list h3{
+    font-size: 20px;
+}
+
+.video-list p{
+    font-size: 15px;
+    color: #ababab;
+    margin-bottom: 10px;
+}
+
 .video{
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
+    color: #30aea3;
 }
 
 .video img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+    border: 5px solid #30aea3;
+}
+
+.layer a{
+    color: #2a22ca;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
