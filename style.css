@@ -6,6 +6,7 @@
 }   
 
 body{
+    /* change background when content populated */
     background: #080808;
     /* will want to chang above and below when coloring decided */
     color: #fff;
